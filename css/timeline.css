@@ -1,0 +1,103 @@
+/* ==========================================
+                TIMELINE
+========================================== */
+
+.timeline{
+
+    background:white;
+
+}
+
+.timeline-wrapper{
+
+    margin-top:60px;
+
+    position:relative;
+
+    padding-left:40px;
+
+}
+
+.timeline-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:11px;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:var(--primary);
+
+    border-radius:10px;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:50px;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:-40px;
+
+    width:26px;
+
+    height:26px;
+
+    background:var(--primary);
+
+    border-radius:50%;
+
+    border:5px solid white;
+
+    box-shadow:var(--shadow);
+
+}
+
+.timeline-content{
+
+    background:white;
+
+    box-shadow:var(--shadow);
+
+    border-radius:15px;
+
+    padding:25px 30px;
+
+}
+
+.timeline-content span{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    font-size:14px;
+
+}
+
+.timeline-content h3{
+
+    margin:10px 0;
+
+}
+
+.timeline-content p{
+
+    color:var(--gray);
+
+    line-height:1.7;
+
+}

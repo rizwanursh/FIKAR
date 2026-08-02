@@ -1,0 +1,79 @@
+/* ==========================================
+                FOOTER
+========================================== */
+
+.footer{
+
+    background:var(--secondary);
+
+    color:white;
+
+    padding-top:60px;
+
+}
+
+.footer-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:60px;
+
+    padding-bottom:40px;
+
+}
+
+.footer-content h2{
+
+    margin-bottom:15px;
+
+}
+
+.footer-content p{
+
+    color:#d9d9d9;
+
+    max-width:350px;
+
+    line-height:1.8;
+
+}
+
+.footer-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.footer-menu a{
+
+    color:#d9d9d9;
+
+    transition:.3s;
+
+}
+
+.footer-menu a:hover{
+
+    color:var(--primary);
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+    padding:20px;
+
+    color:#bfbfbf;
+
+    font-size:14px;
+
+}

@@ -1,0 +1,198 @@
+/* ==========================================
+            RESPONSIVE
+========================================== */
+
+/* ===============================
+            Laptop
+================================ */
+
+@media (max-width:1200px){
+
+    .container{
+        width:92%;
+    }
+
+}
+
+
+/* ===============================
+            Tablet
+================================ */
+
+@media (max-width:992px){
+
+    /* Hero */
+
+    .hero-container{
+
+        flex-direction:column-reverse;
+        text-align:center;
+
+    }
+
+    .hero-description{
+
+        margin:auto;
+        margin-bottom:30px;
+
+    }
+
+    .countdown{
+
+        justify-content:center;
+
+    }
+
+    /* About */
+
+    .about-container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .about-stats{
+
+        justify-content:center;
+        flex-wrap:wrap;
+
+    }
+
+    /* Contact */
+
+    .contact-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* ===============================
+            Mobile
+================================ */
+
+@media (max-width:768px){
+
+    section{
+
+        padding:80px 0;
+
+    }
+
+    .section-title{
+
+        font-size:32px;
+
+    }
+
+    /* Hero */
+
+    .hero h1{
+
+        font-size:50px;
+
+    }
+
+    .hero-image img{
+
+        width:80%;
+
+    }
+
+    /* Competition */
+
+    .competition-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    /* Merch */
+
+    .merch-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    /* Gallery */
+
+    .gallery-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+
+/* ===============================
+            Small Mobile
+================================ */
+
+@media (max-width:576px){
+
+    .section-title{
+
+        font-size:28px;
+
+    }
+
+    .hero h1{
+
+        font-size:40px;
+
+    }
+
+    .countdown{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .count-box{
+
+        width:80px;
+        height:80px;
+
+    }
+
+    .competition-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .merch-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about-stats{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+    .footer-content{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+}

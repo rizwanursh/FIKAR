@@ -1,0 +1,93 @@
+/* ==========================================
+                ABOUT
+========================================== */
+
+.about{
+
+    background:white;
+
+}
+
+.about-container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:70px;
+
+}
+
+.about-content{
+
+    flex:1;
+
+}
+
+.about-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.about-image img{
+
+    width:90%;
+
+    max-width:450px;
+
+}
+
+/* ==========================
+        STATISTIK
+========================== */
+
+.about-stats{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:40px;
+
+}
+
+.stat-card{
+
+    background:#fff;
+
+    box-shadow:var(--shadow);
+
+    border-radius:15px;
+
+    width:140px;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+.stat-card h3{
+
+    color:var(--primary);
+
+    font-size:30px;
+
+    margin-bottom:8px;
+
+}
+
+.stat-card p{
+
+    color:var(--gray);
+
+    font-size:14px;
+
+}

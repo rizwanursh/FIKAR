@@ -1,0 +1,264 @@
+/* ======================================================
+   FIKAR XIV
+   Global Style
+====================================================== */
+
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#FAFAFA;
+    color:#232323;
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+button{
+
+    border:none;
+    cursor:pointer;
+    font-family:'Poppins',sans-serif;
+
+}
+
+/* ==========================
+   ROOT COLOR
+========================== */
+
+:root{
+
+    --primary:#F4B53F;
+
+    --secondary:#232323;
+
+    --accent:#FF9800;
+
+    --white:#FFFFFF;
+
+    --background:#FAFAFA;
+
+    --gray:#888888;
+
+    --light-gray:#F2F2F2;
+
+    --shadow:0 8px 20px rgba(0,0,0,.08);
+
+    --transition:.3s ease;
+
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+}
+
+/* ==========================
+   SECTION
+========================== */
+
+section{
+
+    padding:100px 0;
+
+}
+
+/* ==========================
+   TITLE
+========================== */
+
+.section-title{
+
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+    color:var(--primary);
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+}
+
+.section-description{
+
+    color:var(--gray);
+    line-height:1.8;
+    font-size:16px;
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.btn{
+
+    display:inline-block;
+
+    background:var(--primary);
+
+    color:var(--secondary);
+
+    padding:14px 34px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn:hover{
+
+    background:#d99b23;
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================
+   PLACEHOLDER
+========================== */
+
+#lomba,
+#timeline,
+#merch,
+#galeri,
+#faq,
+#kontak{
+
+    min-height:400px;
+
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ececec;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+/* ==========================================
+            BACK TO TOP
+========================================== */
+
+#topBtn{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    box-shadow:var(--shadow);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+#topBtn.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+#topBtn:hover{
+
+    transform:translateY(-5px);
+
+}
