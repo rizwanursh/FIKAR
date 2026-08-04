@@ -79,3 +79,18 @@
     font-weight:600;
 
 }
+
+.competition-card h4{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.lomba-button{
+    display: flex;
+    justify-content:center;
+    margin-top: 70px;
+    gap:30px;
+}

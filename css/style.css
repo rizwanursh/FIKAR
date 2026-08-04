@@ -170,6 +170,23 @@ section{
 
 }
 
+.btnform{
+    display:inline-block;
+    background:var(--primary);
+    color:var(--secondary);
+    padding:20px 70px;
+    border-radius:10px;
+    font-weight:600;
+    font-size:18px;
+    transition:var(--transition);
+    
+}
+
+.btnform:hover{
+    background:#d99b23;
+    transform:translateY(-3px);
+}
+
 /* ==========================
    PLACEHOLDER
 ========================== */
@@ -197,15 +214,15 @@ section{
 
 ::-webkit-scrollbar-track{
 
-    background:#ececec;
+    background:var(--primary);
 
 }
 
 ::-webkit-scrollbar-thumb{
 
-    background:var(--primary);
+    background:var(--secondary);
 
-    border-radius:20px;
+    /* border-radius:20px; */
 
 }
 

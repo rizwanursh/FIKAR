@@ -196,3 +196,101 @@
     }
 
 }
+
+@media(max-width:992px){
+
+    .contact-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ==========================================
+            FOOTER MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .footer-content{
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+
+        gap:35px;
+
+    }
+
+    .footer-left{
+
+        text-align:center;
+
+    }
+
+    .footer-left p{
+
+        margin:auto;
+
+    }
+
+    .footer-center{
+
+        width:100%;
+
+        display:flex;
+        justify-content:center;
+        gap:50px;
+
+    }
+
+    .footer-column{
+
+        align-items:center;
+
+    }
+
+    .footer-right{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .footer-right iframe{
+
+        width:350px;
+        height:200px;
+
+    }
+
+    .copyright{
+
+        margin-top:25px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .social-media{
+
+        justify-content:center;
+
+    }
+
+}
