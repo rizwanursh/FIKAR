@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>FIKAR XIV | Festival Kampung Arab</title>
+    <title>FIKAR XIV</title>
     <link rel="icon" type="image/png" href="assets/logo/logo-fikar.png">
 
     <!-- Google Font -->
@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/popup.css">
 
     <header class="header">
 
@@ -124,7 +125,9 @@
     
                 <p class="hero-description">
     
-                    apa yaaa??
+                    Acara ini hadir sebagai wadah bagi
+                    generasi muda untuk berkompetisi dan
+                    meraih prestasi di tingkat nasional
                     
     
                 </p>
@@ -163,7 +166,7 @@
     
                 </div>
     
-                <a href="#" class="btn">
+                <a href="#lomba" class="btn">
     
                     Daftar Sekarang
     
@@ -193,7 +196,17 @@
 
         <div class="container about-container">
     
+
             <!-- Kiri -->
+    
+            <div class="about-image" data-aos="fade-left">
+    
+                <img src="assets/logo/logo-fikar.png"
+                     alt="Tentang FIKAR">
+    
+            </div>
+
+            <!-- Kanan -->
             <div class="about-content" data-aos="fade-right">
     
                 <p class="section-subtitle">
@@ -201,27 +214,40 @@
                 </p>
     
                 <h2 class="section-title">
-                    Apa itu Festival Kampung Arab?
+                    Apa itu FIKAR?
                 </h2>
     
-                <p class="section-description">
+                <p class="section-description" style="text-align: justify;">
     
-                    Festival Kampung Arab (FIKAR) merupakan agenda tahunan
-                    berupa ajang perlombaan Bahasa Arab, Seni, dan Budaya
+                    FIKAR (Festival Kampung Arab) adalah salah satu
+                    event terbesar yang diadakan oleh mahasiswa
+                    Pendidikan Bahasa Arab Universitas Pendidikan Indonesia
+                    
+                    
+    
+                </p><br> 
+                <p class="section-description" style="text-align: justify;">
+                    FIKAR merupakan kegiatan untuk memperkenalkan kekayaan
+                    bahasa arab yang digelar sebagai ajang peningkatan
+                    kemampuan berbahasa arab. Acara ini berisikan berbagai
+                    jenis kegiatan, seperti perlombaan tingkat nasional,
+                    seminar nasional, dan bazar yang menarik antusiasme
+                    banyak orang
+                    
+                    <!-- agenda tahunan berupa ajang perlombaan Bahasa Arab, Seni, dan Budaya
                     yang diselenggarakan oleh BEM KEMABA FPBS UPI
                     yang bertujuan menjadi wadah pengembangan potensi,
                     kreativitas, serta kecintaan terhadap Bahasa Arab
-                    dan kebudayaannya.
-    
+                    dan kebudayaannya. -->
                 </p>
     
                 <div class="about-stats">
     
                     <div class="stat-card">
     
-                        <h3>7</h3>
+                        <h3>14</h3>
     
-                        <p>Hari</p>
+                        <p>Tahun Edisi</p>
     
                     </div>
     
@@ -245,14 +271,7 @@
     
             </div>
     
-            <!-- Kanan -->
-    
-            <div class="about-image" data-aos="fade-left">
-    
-                <img src="assets/logo/logo-fikar.png"
-                     alt="Tentang FIKAR">
-    
-            </div>
+            
     
         </div>
     
@@ -286,7 +305,7 @@
     
                 <div class="competition-card" data-aos="zoom-in">
     
-                    <i class="fa-solid fa-comments"></i>
+                    <i class="fa-solid fa-spell-check"></i>
     
                     <h3>Olimpiade Qowaid</h3>
     
@@ -306,7 +325,7 @@
 
                 <div class="competition-card" data-aos="zoom-in">
     
-                    <i class="fa-solid fa-book-quran"></i>
+                    <i class="fa-solid fa-book-open-reader"></i>
     
                     <h3>MQK</h3>
     
@@ -326,7 +345,7 @@
     
                 <div class="competition-card" data-aos="zoom-in">
     
-                    <i class="fa-solid fa-comments"></i>
+                    <i class="fa-solid fa-masks-theater"></i>
     
                     <h3>Taqdimul Qishah</h3>
     
@@ -346,7 +365,7 @@
 
                 <div class="competition-card" data-aos="zoom-in">
     
-                    <i class="fa-solid fa-book-quran"></i>
+                    <i class="fa-solid fa-brain"></i>
     
                     <h3>MHQ</h3>
     
@@ -386,7 +405,7 @@
 
                 <div class="competition-card" data-aos="zoom-in">
     
-                    <i class="fa-solid fa-book-open-reader"></i>
+                    <i class="fa-solid fa-newspaper"></i>
     
                     <h3>Qira'atul Akhbar</h3>
     
@@ -406,7 +425,7 @@
 
                 <div class="competition-card" data-aos="zoom-in">
     
-                    <i class="fa-solid fa-language"></i>
+                    <i class="fa-solid fa-comments"></i>
     
                     <h3>Munadzarah</h3>
     
@@ -426,12 +445,12 @@
 
                 <div class="competition-card" data-aos="zoom-in">
     
-                    <i class="fa-solid fa-book-quran"></i>
+                    <i class="fa-solid fa-music"></i>
     
                     <h3>Ghina 'Arabiy</h3>
     
                     <p>
-                        Musabaqah Qira'atil Kutub
+                        Bernyanyi menggunakan Bahasa Arab
                     </p>
 
                     <h4>
@@ -467,10 +486,14 @@
             </div>
 
             <div class="lomba-button" data-aos="zoom-in">
-                <a href="#" class="btnform">
+                <button type="button" class="btnform" id="openlombapopup">
                         Daftar Lomba
-                    </a>
-                <a href="#" class="btnform">
+                </button>
+                <a 
+                    href="https://drive.google.com/file/d/19ltlY_H4kxVNV3rwGfFSyWo16uqbRqg8/view?usp=sharing" 
+                    class="btnform"
+                    target="_blank"
+                    rel="noopener noreferrer">
                         Buku Panduan
                     </a>
             </div>
@@ -478,6 +501,108 @@
         </div>
     
     </section>
+
+    <div class="lomba-modal" id="lombamodal">
+        <div class="lomba-modal-content">
+            <!-- tombol close -->
+             <button
+                type="button"
+                class="lomba-modal-close"
+                id="closelombapopup"
+                aria-label="Tutup">
+                &times;
+            </button>
+
+            <!-- header popup -->
+             <div class="lomba-modal-header">
+                <small>Pendaftaran Lomba FIKAR XIV</small>
+                <h3>
+                    Silahkan pilih sesuai cabang lomba yang
+                    ingin diikuti
+                </h3>
+                <p>
+                    Kemudian nanti akan diarahkan menuju
+                    formulir pendaftaran
+                </p>
+             </div>
+
+             <!-- daftar lomba -->
+             <div class="lomba-modal-list">
+                <a 
+                    href="link-gform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="lomba-modal-button">
+                    Olimpiade Qowaid
+                </a>
+                
+                <a 
+                    href="link-gform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="lomba-modal-button">
+                    MQK
+                </a>
+
+                <a 
+                    href="link-gform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="lomba-modal-button">
+                    Taqdimul Qishah
+                </a>
+
+                <a 
+                    href="link-gform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="lomba-modal-button">
+                    MHQ
+                </a>
+
+                <a 
+                    href="link-gform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="lomba-modal-button">
+                    Khitabah Arabiyyah
+                </a>
+
+                <a 
+                    href="link-gform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="lomba-modal-button">
+                    Qira'atul Akhbar
+                </a>
+
+                <a 
+                    href="link-gform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="lomba-modal-button">
+                    Munadzarah
+                </a>
+
+                <a 
+                    href="link-gform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="lomba-modal-button">
+                    Ghina 'Arabiy
+                </a>
+
+                <a 
+                    href="link-gform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="lomba-modal-button">
+                    MTQ
+                </a>
+                
+             </div>
+        </div>
+    </div>
 
 
 
@@ -653,7 +778,7 @@
 
         <h2>Merchandise FIKAR XIV</h2>
 
-        <p class="section-desc">
+        <p class="section-description">
             Miliki merchandise resmi Festival Kampung Arab XIV.
         </p>
 
@@ -663,7 +788,7 @@
 
                 <div class="swiper-slide">
 
-                    <img src="assets/images/foto-fikar2.JPG">
+                    <img src="assets/images/foto-merch1.JPG">
 
                     <h3>T-Shirt FIKAR XIV</h3>
 
@@ -671,7 +796,7 @@
 
                 <div class="swiper-slide">
 
-                    <img src="assets/images/foto-fikar1.JPG">
+                    <img src="assets/images/foto-merch1.JPG">
 
                     <h3>Totebag</h3>
 
@@ -723,7 +848,7 @@
 
     </div>
 
-</section>
+    </section>
 
 
 
@@ -839,8 +964,7 @@
     
                         <p>
                             Pendaftaran dilakukan secara online melalui website ini pada bagian
-                            lomba atau langsung melalui link berikut 
-                            <a href="https://www.w3schools.com/html/html_links.asp">hai</a>.
+                            lomba.
                         </p>
     
                     </div>
@@ -880,7 +1004,7 @@
                     <div class="faq-answer">
     
                         <p>
-                            Silakan menuju bagian Contact di bawah atau melalui Instagram resmi FIKAR XIV.
+                            Silakan menuju bagian contact di bawah atau melalui instagram resmi FIKAR XIV.
                         </p>
     
                     </div>
@@ -959,10 +1083,11 @@
             KONTAK
     ============================ -->
 
-    <section id="kontak" class="contact">
+    <section class="contact" id="kontak">
 
-        <div class="container">
-    
+    <div class="container">
+
+        <div class="section-title">
             <span class="section-subtitle">
                 Kontak
             </span>
@@ -971,166 +1096,109 @@
                 Hubungi Kami
             </h2>
     
-            <p class="section-desc">
+            <p class="section-description">
                 Jika memiliki pertanyaan mengenai FIKAR XIV,
                 silakan hubungi panitia melalui informasi berikut.
             </p>
-    
-            <div class="contact-grid" data-aos="fade-up">
-
-                <a href="https://wa.me/6281234567890" class="contact-card" target="_blank">
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                    <div class="contact-info">
-                    <small>WhatsApp Admin 1</small>
-                    <h4>0828-2828-2828</h4>
-                </div>
-                </a>
-
-                <a href="https://wa.me/6281234567890" class="contact-card" target="_blank">
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                    <div class="contact-info">
-                    <small>CP Sponsor</small>
-                    <h4>0828-2828-2828</h4>
-                </div>
-                </a>
-
-                <a href="https://wa.me/6281234567890" class="contact-card" target="_blank">
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                    <div class="contact-info">
-                    <small>CP 1 (Akhwat)</small>
-                    <h4>0828-2828-2828</h4>
-                </div>
-                </a>
-
-                <a href="https://wa.me/6281234567890" class="contact-card" target="_blank">
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                    <div class="contact-info">
-                    <small>WhatsApp Admin 2</small>
-                    <h4>0828-2828-2828</h4>
-                </div>
-                </a>
-
-                <a href="https://wa.me/6281234567890" class="contact-card" target="_blank">
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                    <div class="contact-info">
-                    <small>CP Medpart</small>
-                    <h4>0828-2828-2828</h4>
-                </div>
-                </a>
-
-                <a href="https://wa.me/6281234567890" class="contact-card" target="_blank">
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                    <div class="contact-info">
-                    <small>CP 2 (Ikhwan)</small>
-                    <h4>0828-2828-2828</h4>
-                </div>
-                </a>
-    
-                <!-- Informasi
-    
-                <div class="contact-info" data-aos="fade-right">
-    
-                    <div class="contact-item">
-    
-                        <i class="fa-solid fa-location-dot"></i>
-    
-                        <div>
-    
-                            <h3>Alamat</h3>
-    
-                            <p>
-                                Universitas Pendidikan Indonesia,
-                                Bandung, Jawa Barat
-                            </p>
-    
-                        </div>
-    
-                    </div>
-    
-                    <div class="contact-item">
-    
-                        <i class="fa-solid fa-phone"></i>
-    
-                        <div>
-    
-                            <h3>WhatsApp</h3>
-    
-                            <p>
-                                +62 812-3456-7890
-                            </p>
-    
-                        </div>
-    
-                    </div>
-    
-                    <div class="contact-item">
-    
-                        <i class="fa-solid fa-envelope"></i>
-    
-                        <div>
-    
-                            <h3>Email</h3>
-    
-                            <p>
-                                fikarpbaupi@gmail.com
-                            </p>
-    
-                        </div>
-    
-                    </div>
-    
-                    <div class="contact-item">
-    
-                        <i class="fa-brands fa-instagram"></i>
-    
-                        <div>
-    
-                            <h3>Instagram</h3>
-    
-                            <p>
-                                @fikar_upi
-                            </p>
-    
-                        </div>
-    
-                    </div>
-    
-                        </div>
-    
-                    </div>
-    
-                </div> -->
-
-                
-    
-                <!-- Maps
-    
-                <div class="contact-map" data-aos="fade-left">
-    
-                    <iframe
-                        src="https://www.google.com/maps?q=Universitas+Pendidikan+Indonesia&output=embed"
-                        loading="lazy">
-                    </iframe>
-    
-                </div> -->
-    
-            </div>
-    
         </div>
-    
-    </section>
+        <div class="contact-wrapper">
+
+            <!-- KIRI -->
+            <div class="contact-list">
+
+                <!-- Card -->
+                <a href="#" class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+
+                    <div class="contact-info">
+                        <small>WhatsApp Admin 1</small>
+                        <h4>0828-2828-2828</h4>
+                    </div>
+
+                </a>
+
+                <a href="#" class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+
+                    <div class="contact-info">
+                        <small>WhatsApp Admin 2</small>
+                        <h4>0828-2828-2828</h4>
+                    </div>
+
+                </a>
+                
+                <a href="#" class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+
+                    <div class="contact-info">
+                        <small>CP Sponsor</small>
+                        <h4>0828-2828-2828</h4>
+                    </div>
+
+                </a>
+
+                <a href="#" class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+
+                    <div class="contact-info">
+                        <small>CP Medpart</small>
+                        <h4>0828-2828-2828</h4>
+                    </div>
+
+                </a>
+
+                <a href="#" class="contact-card">
+
+                    <div class="contact-icon">
+                        <img src="assets/icons/muslimah.png" alt="" class="cpakhwat">
+                    </div>
+
+                    <div class="contact-info">
+                        <small>CP 1 (Akhwat)</small>
+                        <h4>0828-2828-2828</h4>
+                    </div>
+
+                </a>
+
+                <a href="#" class="contact-card">
+
+                    <div class="contact-icon">
+                        <img src="assets/icons/muslim-boy.png" alt="" class="cpikhwan">
+                    </div>
+
+                    <div class="contact-info">
+                        <small>CP 2 (Ikhwan)</small>
+                        <h4>0828-2828-2828</h4>
+                    </div>
+
+                </a>
+
+            </div>
+
+            <!-- KANAN -->
+            <div class="contact-mascot">
+
+                <img src="assets/images/ZAHI-foto.PNG" alt="Maskot Zahi">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <button id="topBtn">
 
@@ -1163,19 +1231,24 @@
 
                 <div class="social-media">
 
-                    <a href="https://youtube.com/" target="_blank">
+                    <a href="https://www.youtube.com/@kemabaupi427" target="_blank">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
 
-                    <a href="https://wa.me/6281234567890" target="_blank">
-                        <i class="fa-brands fa-whatsapp"></i>
+                    <!-- <a href="mailto:fikarpbaupi@gmail.com" class="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a> -->
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fikarpbaupi@gmail.com"
+                        target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
                     </a>
 
-                    <a href="https://instagram.com/fikar.upi" target="_blank">
+                    <a href="https://instagram.com/fikar_upi" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
-                    <a href="https://tiktok.com/@fikar.upi" target="_blank">
+                    <a href="https://www.tiktok.com/@arab_upi" target="_blank">
                         <i class="fa-brands fa-tiktok"></i>
                     </a>
 
@@ -1250,7 +1323,12 @@
     <script src="js/scroll.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lomba-popup.js"></script>
 
-    
+    <script>
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+    </script>
 
 </html>

@@ -117,7 +117,7 @@ section{
 .section-title{
 
     font-size:36px;
-    font-weight:700;
+    /* font-weight:700; */
     margin-bottom:15px;
 
 }
@@ -179,6 +179,7 @@ section{
     font-weight:600;
     font-size:18px;
     transition:var(--transition);
+    text-align:center;
     
 }
 
@@ -205,7 +206,7 @@ section{
 /* ==========================
    SCROLLBAR
 ========================== */
-
+/* 
 ::-webkit-scrollbar{
 
     width:8px;
@@ -224,7 +225,7 @@ section{
 
     /* border-radius:20px; */
 
-}
+} */
 
 /* ==========================================
             BACK TO TOP
