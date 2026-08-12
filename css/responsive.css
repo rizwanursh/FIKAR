@@ -112,8 +112,14 @@
        COMPETITION
     ========================== */
 
-    .competition-grid {
-        grid-template-columns: 1fr 1fr;
+    .competition-grid{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+        width:100%;
+    }
+
+    .competition-card{
+        width:100%;
+        min-width:0;
     }
 
 
@@ -248,16 +254,19 @@
     ========================== */
 
     .lomba-modal {
+        width:100%;
         padding: 12px;
-        align-items: center;
+        box-sizing:border-box;
+        /* align-items: center; */
     }
 
     .lomba-modal-content {
         width: 100%;
         max-width: 360px;
         max-height: 90vh;
-        padding: 22px 14px;
-        border-radius: 13px;
+        box-sizing:border-box;
+        /* padding: 22px 14px;
+        border-radius: 13px; */
     }
 
     .lomba-modal-header {
@@ -280,18 +289,23 @@
     }
 
     .lomba-modal-list {
-        grid-template-columns: 1fr;
+        width:100%;
+        box-sizing:border-box;
+        grid-template-columns: 1fr 1fr !important;
         gap: 7px;
         padding: 10px;
         max-height: 62vh;
         overflow-y: auto;
+        overflow-x:hidden;
     }
 
     .lomba-modal-button {
-        min-height: 40px;
+        width:100%;
+        box-sizing:border-box;
+        /* min-height: 40px;
         padding: 8px 10px;
         font-size: 10px;
-        border-radius: 9px;
+        border-radius: 9px; */
     }
 
     .lomba-modal-close {
@@ -322,27 +336,49 @@
    max-width: 576px
 ========================================== */
 
-@media (max-width: 576px) {
+@media (max-width:576px){
 
-    .section-title {
-        font-size: 28px;
+    .section-title{
+        font-size:28px;
     }
 
-    .hero h1 {
-        font-size: 40px;
+    .hero h1{
+        font-size:40px;
     }
 
-    .countdown {
-        flex-wrap: wrap;
-        justify-content: center;
+    .countdown{
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
-    .count-box {
-        width: 80px;
-        height: 80px;
+    .count-box{
+        width:80px;
+        height:80px;
     }
 
+    .merch-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .about-stats{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .competition-grid{
+        grid-template-columns:1fr; //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    }
 }
+
 
 
 /* ==========================================

@@ -27,6 +27,8 @@ html{
 
 body{
 
+    width:100%;
+    max-width:100%;
     font-family:'Poppins',sans-serif;
     background:#FAFAFA;
     color:#232323;
