@@ -1,467 +1,384 @@
 /* ==========================================
-            RESPONSIVE
+   RESPONSIVE
+   FIKAR XIV
 ========================================== */
 
-/* ===============================
-            Laptop
-================================ */
 
-@media (max-width:1200px){
+/* ==========================================
+   LAPTOP
+   max-width: 1200px
+========================================== */
 
-    .container{
-        width:92%;
+@media (max-width: 1200px) {
+
+    .container {
+        width: 92%;
     }
 
 }
 
 
-/* ===============================
-            Tablet
-================================ */
+/* ==========================================
+   TABLET
+   max-width: 992px
+========================================== */
 
-@media (max-width:992px){
+@media (max-width: 992px) {
 
-    /* Hero */
+    /* ==========================
+       HERO
+    ========================== */
 
-    .hero-container{
-
-        flex-direction:column-reverse;
-        text-align:center;
-
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
     }
 
-    .hero-description{
-
-        margin:auto;
-        margin-bottom:30px;
-
+    .hero-description {
+        margin: auto;
+        margin-bottom: 30px;
     }
 
-    .countdown{
-
-        justify-content:center;
-
+    .countdown {
+        justify-content: center;
     }
 
-    /* About */
 
-    .about-container{
+    /* ==========================
+       ABOUT
+    ========================== */
 
-        flex-direction:column;
-
-        text-align:center;
-
+    .about-container {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .about-stats{
-
-        justify-content:center;
-        flex-wrap:wrap;
-
+    .about-stats {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    /* Contact */
 
-    .contact-wrapper{
+    /* ==========================
+       CONTACT
+    ========================== */
 
-        grid-template-columns:1fr;
-
+    .contact-wrapper {
+        grid-template-columns: 1fr;
     }
 
-}
-
-
-/* ===============================
-            Mobile
-================================ */
-
-@media (max-width:768px){
-
-    section{
-
-        padding:80px 0;
-
-    }
-
-    .section-title{
-
-        font-size:32px;
-
-    }
-
-    /* Hero */
-
-    .hero h1{
-
-        font-size:50px;
-
-    }
-
-    .hero-image img{
-
-        width:80%;
-
-    }
-
-    /* Competition */
-
-    .competition-grid{
-
-        grid-template-columns:1fr 1fr;
-
-    }
-
-    /* Merch */
-
-    .merch-grid{
-
-        grid-template-columns:1fr 1fr;
-
-    }
-
-    /* Gallery */
-
-    .gallery-grid{
-
-        grid-template-columns:1fr 1fr;
-
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
 
-@media(max-width:768px){
 
-    .contact-wrapper{
-
-        flex-direction:column;
-
-    }
-
-    .contact-list{
-
-        grid-template-columns:1fr;
-
-        width:100%;
-
-    }
-
-    /* .contact-mascot{
-
-        margin-top:30px;
-
-    } */
-
-    .contact-mascot img{
-
-        width:100%;
-
-    }
-
-}
-
-/* ========================================
-   POPUP LOMBA - MOBILE
-======================================== */
+/* ==========================================
+   MOBILE
+   max-width: 768px
+========================================== */
 
 @media (max-width: 768px) {
 
-    .lomba-modal {
+    /* ==========================
+       GENERAL
+    ========================== */
 
-        padding: 12px;
-
-        align-items: center;
-
+    section {
+        padding: 80px 0;
     }
 
+    .section-title {
+        font-size: 32px;
+    }
+
+
+    /* ==========================
+       HERO
+    ========================== */
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero-image img {
+        width: 80%;
+        margin: auto;
+    }
+
+
+    /* ==========================
+       COMPETITION
+    ========================== */
+
+    .competition-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* ==========================
+       MERCH
+    ========================== */
+
+    .merch-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ==========================
+       GALLERY
+    ========================== */
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+
+
+    /* ==========================
+       CONTACT
+    ========================== */
+
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-list {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-mascot img {
+        width: 100%;
+    }
+
+
+    /* ==========================
+       ABOUT
+    ========================== */
+
+    .about-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* ==========================
+       FOOTER
+    ========================== */
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .footer-left {
+        text-align: center;
+    }
+
+    .footer-left p {
+        margin: auto;
+    }
+
+    .footer-center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .footer-column {
+        align-items: center;
+    }
+
+    .footer-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-right iframe {
+        width: 100%;
+        max-width: 350px;
+        height: 200px;
+    }
+
+    .copyright {
+        margin-top: 25px;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+
+    /* ==========================
+       BUTTON LOMBA
+    ========================== */
+
+    .lomba-button {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .lomba-button .btnform {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    /* ==========================
+       POPUP LOMBA
+    ========================== */
+
+    .lomba-modal {
+        padding: 12px;
+        align-items: center;
+    }
 
     .lomba-modal-content {
-
         width: 100%;
-
         max-width: 360px;
-
         max-height: 90vh;
-
         padding: 22px 14px;
-
         border-radius: 13px;
-
     }
-
 
     .lomba-modal-header {
-
         padding-right: 25px;
-
         margin-bottom: 14px;
-
     }
-
 
     .lomba-modal-header small {
-
         font-size: 8px;
-
         margin-bottom: 8px;
-
     }
-
 
     .lomba-modal-header h3 {
-
         font-size: 14px;
-
         line-height: 1.4;
-
     }
-
 
     .lomba-modal-header p {
-
         font-size: 9px;
-
     }
-
-
-    /*
-       Tombol menjadi satu kolom
-    */
 
     .lomba-modal-list {
-
         grid-template-columns: 1fr;
-
         gap: 7px;
-
         padding: 10px;
-
         max-height: 62vh;
-
         overflow-y: auto;
-
     }
-
 
     .lomba-modal-button {
-
         min-height: 40px;
-
         padding: 8px 10px;
-
         font-size: 10px;
-
         border-radius: 9px;
-
     }
-
 
     .lomba-modal-close {
-
         width: 22px;
         height: 22px;
-
         top: 10px;
         right: 10px;
-
         font-size: 17px;
+    }
 
+
+    /* ==========================
+       BACK TO TOP
+    ========================== */
+
+    #topBtn {
+        right: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
     }
 
 }
 
-/* ===============================
-            Small Mobile
-================================ */
-
-@media (max-width:576px){
-
-    .section-title{
-
-        font-size:28px;
-
-    }
-
-    .hero h1{
-
-        font-size:40px;
-
-    }
-
-    .countdown{
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-    }
-
-    .count-box{
-
-        width:80px;
-        height:80px;
-
-    }
-
-    /* .competition-grid{
-
-        grid-template-columns:1fr;
-
-    } */
-
-    .merch-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .gallery-grid{
-
-        grid-template-columns:1fr 1fr;
-
-    }
-
-    @media (max-width:768px){
-
-    .gallery-item img{
-
-        width:100%;
-        height:auto;
-        object-fit:contain;
-        border-radius:12px;
-
-    }
-
-}
-
-    .about-stats{
-
-        flex-direction:column;
-        align-items:center;
-
-    }
-
-    .footer-content{
-
-        flex-direction:column;
-        text-align:center;
-
-    }
-
-}
-
-@media(max-width:992px){
-
-    .contact-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-}
-
-@media(max-width:768px){
-
-    .contact-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
 
 /* ==========================================
-            FOOTER MOBILE
+   SMALL MOBILE
+   max-width: 576px
 ========================================== */
 
-@media (max-width:768px){
+@media (max-width: 576px) {
 
-    .footer-content{
-
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        text-align:center;
-
-        gap:35px;
-
+    .section-title {
+        font-size: 28px;
     }
 
-    .footer-left{
-
-        text-align:center;
-
+    .hero h1 {
+        font-size: 40px;
     }
 
-    .footer-left p{
-
-        margin:auto;
-
+    .countdown {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .footer-center{
-
-        width:100%;
-
-        display:flex;
-        justify-content:center;
-        gap:50px;
-
-    }
-
-    .footer-column{
-
-        align-items:center;
-
-    }
-
-    .footer-right{
-
-        width:100%;
-
-        justify-content:center;
-
-    }
-
-    .footer-right iframe{
-
-        width:350px;
-        height:200px;
-
-    }
-
-    .copyright{
-
-        margin-top:25px;
-
+    .count-box {
+        width: 80px;
+        height: 80px;
     }
 
 }
 
-@media (max-width:768px){
 
-    .social-media{
+/* ==========================================
+   VERY SMALL MOBILE
+   max-width: 360px
+========================================== */
 
-        justify-content:center;
+@media (max-width: 360px) {
 
+    section {
+        padding: 60px 0;
     }
 
-}
-@media (max-width:768px){
-
-    .lomba-button{
-
-        display:flex;
-        flex-direction:column;
-        gap:15px;
-        align-items:center;
-
+    .section-title {
+        font-size: 25px;
     }
 
-    .lomba-button .btnform{
-
-        width:100%;
-        max-width:300px;
-
+    .hero h1 {
+        font-size: 34px;
     }
 
-}
+    .competition-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .footer-center {
+        gap: 25px;
+    }
+
+    .footer-right iframe {
+        max-width: 100%;
+    }
+
+}   
