@@ -48,8 +48,7 @@
 
 /* Animasi ketika popup muncul */
 
-.lomba-modal.active
-.lomba-modal-content {
+.lomba-modal.active .lomba-modal-content {
     transform: translateY(0) scale(1);
 }
 
@@ -131,6 +130,9 @@
     border: 1px solid #f8b738;
     border-radius: 10px;
     background: #f8f8f8;
+    max-height: 62vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
 }
 
 

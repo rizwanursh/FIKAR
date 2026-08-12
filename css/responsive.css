@@ -375,7 +375,7 @@
     }
 
     .competition-grid{
-        grid-template-columns:1fr 1fr; //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        grid-template-columns:1fr; //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     }
 }
 
