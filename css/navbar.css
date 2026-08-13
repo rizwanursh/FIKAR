@@ -154,6 +154,7 @@
 .navbar ul li a.active::after{
 
     width: 100%;
+    background: white;
 
 }
 
@@ -174,27 +175,22 @@
 
 
 /* ==========================================
-            MOBILE MENU
+   MOBILE MENU
 ========================================== */
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .hamburger{
-
+    .hamburger {
         display: block;
-
     }
 
-    .navbar{
-
+    .navbar {
         position: fixed;
 
         top: 85px;
-
         right: -100%;
 
         width: 270px;
-
         height: calc(100vh - 85px);
 
         background: white;
@@ -202,17 +198,13 @@
         box-shadow: -5px 0 20px rgba(0,0,0,.1);
 
         transition: .4s;
-
     }
 
-    .navbar.active{
-
+    .navbar.active {
         right: 0;
-
     }
 
-    .navbar ul{
-
+    .navbar ul {
         flex-direction: column;
 
         align-items: flex-start;
@@ -220,12 +212,80 @@
         padding: 40px 30px;
 
         gap: 28px;
+    }
+
+
+    /* ======================================
+       ACTIVE MENU - MOBILE
+    ====================================== */
+
+    .navbar ul li a{
+        color: var(--secondary);
+    }
+
+    .navbar ul li a.active {
+        color: var(--primary);
+    }
+
+    .navbar ul li a.active::after {
+        width: 100%;
+        background: var(--primary);
+    }
+
+    .navbar ul li a:hover{
+
+    color: var(--primary);
+
+    }
+
+
+/* Garis bawah */
+
+    .navbar ul li a::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--primary);
+
+    transition: .3s;
+
+    }
+
+    .navbar ul li a:hover::after{
+
+    width: 100%;
 
     }
 
 }
 
-.navbar a{
+
+
+    /* Active menu mobile */
+
+    /* .navbar ul li a.active{
+
+        color: white;
+
+    }
+
+    .navbar ul li a.active::after{
+
+        background: white;
+
+    } */
+
+/* .navbar a{
     position: relative;
     color: #222;
     text-decoration: none;
@@ -250,4 +310,4 @@
 }
 .navbar a.active{
     color: white;
-}
+} */
