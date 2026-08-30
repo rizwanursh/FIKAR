@@ -96,7 +96,7 @@
     width:45px;
     height:45px;
     border-radius:50%;
-    background:#F4B53F;
+    background:var(--primary);
     color:white;
     transition:.3s;
 }

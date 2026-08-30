@@ -114,7 +114,7 @@
     margin: 0;
     font-size: 11px;
     line-height: 1.5;
-    color: #f8b738;
+    color: var(--primary);
 }
 
 
@@ -124,10 +124,10 @@
 
 .lomba-modal-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     padding: 10px;
-    border: 1px solid #f8b738;
+    border: 1px solid #f09939;
     border-radius: 10px;
     background: #f8f8f8;
     max-height: 62vh;
@@ -147,7 +147,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #f8b738;
+    background:var(--primary);
     color: #222;
     text-decoration: none;
     font-size: 12px;
@@ -161,7 +161,7 @@
 
 
 .lomba-modal-button:hover {
-    background: #f5ae24;
+    background: #f4b635;
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
 }

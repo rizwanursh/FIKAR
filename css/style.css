@@ -73,7 +73,7 @@ button{
 
 :root{
 
-    --primary:#F4B53F;
+    --primary:#f09939;
 
     --secondary:#232323;
 
@@ -169,7 +169,7 @@ section{
 
 .btn:hover{
 
-    background:#d99b23;
+    background:#f4b635;
 
     transform:translateY(-3px);
 
@@ -189,7 +189,7 @@ section{
 }
 
 .btnform:hover{
-    background:#d99b23;
+    background:#f4b635;
     transform:translateY(-3px);
 }
 
