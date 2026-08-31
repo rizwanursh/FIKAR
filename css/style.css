@@ -20,51 +20,39 @@
 }
 
 html{
-
     scroll-behavior:smooth;
-
 }
 
 body{
-
     width:100%;
     max-width:100%;
     font-family:'Poppins',sans-serif;
     background:#FAFAFA;
     color:#232323;
     overflow-x:hidden;
-
 }
 body.modal-open{
     overflow:hidden;
 }
 
 img{
-
     max-width:100%;
     display:block;
-
 }
 
 a{
-
     text-decoration:none;
     color:inherit;
-
 }
 
 ul{
-
     list-style:none;
-
 }
 
 button{
-
     border:none;
     cursor:pointer;
     font-family:'Poppins',sans-serif;
-
 }
 
 /* ==========================
@@ -72,25 +60,16 @@ button{
 ========================== */
 
 :root{
-
     --primary:#f09939;
-
     --secondary:#232323;
-
     --accent:#FF9800;
-
     --white:#FFFFFF;
-
     --background:#FAFAFA;
-
     --gray:#888888;
-
     --light-gray:#F2F2F2;
-
     --shadow:0 8px 20px rgba(0,0,0,.08);
-
     --transition:.3s ease;
-
+    --shadow-orange: 0 10px 25px -5px rgba(240, 153, 57, 0.5);
 }
 
 /* ==========================
@@ -98,11 +77,9 @@ button{
 ========================== */
 
 .container{
-
     width:90%;
     max-width:1200px;
     margin:auto;
-
 }
 
 /* ==========================
@@ -110,9 +87,7 @@ button{
 ========================== */
 
 section{
-
     padding:100px 0;
-
 }
 
 /* ==========================
@@ -120,29 +95,23 @@ section{
 ========================== */
 
 .section-title{
-
     font-size:36px;
     /* font-weight:700; */
     margin-bottom:15px;
-
 }
 
 .section-subtitle{
-
     color:var(--primary);
     font-size:15px;
     font-weight:600;
     letter-spacing:2px;
     text-transform:uppercase;
-
 }
 
 .section-description{
-
     color:var(--gray);
     line-height:1.8;
     font-size:16px;
-
 }
 
 /* ==========================
@@ -150,29 +119,19 @@ section{
 ========================== */
 
 .btn{
-
     display:inline-block;
-
     background:var(--primary);
-
     color:var(--secondary);
-
     padding:14px 34px;
-
     border-radius:10px;
-
     font-weight:600;
-
     transition:var(--transition);
-
+    box-shadow:var(--shadow-orange)
 }
 
 .btn:hover{
-
     background:#f4b635;
-
     transform:translateY(-3px);
-
 }
 
 .btnform{
@@ -185,7 +144,7 @@ section{
     font-size:18px;
     transition:var(--transition);
     text-align:center;
-    
+    box-shadow:var(--shadow-orange)
 }
 
 .btnform:hover{
@@ -237,51 +196,30 @@ section{
 ========================================== */
 
 #topBtn{
-
     position:fixed;
-
     right:30px;
-
     bottom:30px;
-
     width:55px;
-
     height:55px;
-
     border:none;
-
     border-radius:50%;
-
     background:var(--primary);
-
     color:white;
-
     cursor:pointer;
-
     font-size:20px;
-
     box-shadow:var(--shadow);
-
     opacity:0;
-
     visibility:hidden;
-
     transition:.3s;
-
     z-index:999;
-
+    box-shadow:var(--shadow-orange)
 }
 
 #topBtn.show{
-
     opacity:1;
-
     visibility:visible;
-
 }
 
 #topBtn:hover{
-
     transform:translateY(-5px);
-
 }

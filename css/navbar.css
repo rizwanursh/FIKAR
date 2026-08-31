@@ -13,7 +13,7 @@
 
     background: var(--primary);
 
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-orange);
 
     z-index: 999;
 
@@ -195,7 +195,7 @@
 
         background: white;
 
-        box-shadow: -5px 0 20px rgba(0,0,0,.1);
+        box-shadow: var(--shadow-orange);
 
         transition: .4s;
     }
