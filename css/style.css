@@ -112,6 +112,8 @@ section{
     color:var(--gray);
     line-height:1.8;
     font-size:16px;
+    text-align:justify;
+    
 }
 
 /* ==========================
