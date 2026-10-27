@@ -1,0 +1,232 @@
+
+/* ===== TALKSHOW ===== */
+.talkshow {
+    padding: 100px 0;
+    background: var(--background);
+}
+
+.talkshow .about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* Konten informasi */
+.talkshow .about-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.talkshow .section-description {
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+/* Poster */
+.talkshow .about-image {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    opacity: 1;
+}
+
+.talkshow .talkshow-poster {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    cursor: zoom-in;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.talkshow .talkshow-poster:hover {
+    transform: scale(1.035);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+/* Informasi acara */
+.talkshow-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.talkshow-info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.talkshow-info-item > i {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--primary);
+    color: var(--secondary);
+    font-size: 19px;
+}
+
+.talkshow-info-item h3 {
+    font-size: 16px;
+    margin: 0 0 5px;
+    color: var(--secondary);
+}
+
+.talkshow-info-item p {
+    margin: 0;
+    color: var(--gray);
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* Tombol pendaftaran */
+.talkshow-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.talkshow .talkshow-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+    text-decoration: none;
+}
+
+/* Popup poster */
+.poster-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.88);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.poster-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.poster-lightbox img {
+    display: block;
+    max-width: 90%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    transform: scale(0.92);
+    transition: transform 0.3s ease;
+    cursor: zoom-out;
+}
+
+.poster-lightbox.active img {
+    transform: scale(1);
+}
+
+.poster-close {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 42px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .talkshow .about-container {
+        gap: 35px;
+    }
+
+    .talkshow .talkshow-poster {
+        max-width: 380px;
+    }
+}
+
+/* HP */
+@media (max-width: 768px) {
+    .talkshow {
+        padding: 70px 0;
+    }
+
+    .talkshow .about-container {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .talkshow .about-content,
+    .talkshow .about-image {
+        width: 100%;
+        flex: none;
+    }
+
+    .talkshow .about-image {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .talkshow .talkshow-poster {
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .talkshow .about-content {
+        text-align: left;
+    }
+
+    .talkshow-info {
+        gap: 16px;
+    }
+
+    .talkshow-action {
+        margin-top: 28px;
+    }
+
+    .talkshow .talkshow-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .poster-lightbox {
+        padding: 15px;
+    }
+
+    .poster-lightbox img {
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    .poster-close {
+        top: 12px;
+        right: 16px;
+    }
+}

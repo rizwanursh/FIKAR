@@ -270,6 +270,80 @@
 }
 
 
+/* Dropdown Kegiatan */
+.navbar ul li.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--secondary);
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dropdown-toggle:hover {
+    color: white;
+}
+
+.dropdown-toggle i {
+    font-size: 11px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-menu {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    padding: 8px 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    flex-direction: column;
+    gap: 0 !important;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 18px;
+    color: var(--secondary) !important;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background: var(--light-gray);
+    color: var(--accent) !important;
+}
+
+.dropdown:hover > .dropdown-menu,
+.dropdown:focus-within > .dropdown-menu,
+.dropdown.open > .dropdown-menu {
+    display: flex !important;
+}
+
+.dropdown:hover > .dropdown-toggle i,
+.dropdown.open > .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+
+
 
     /* Active menu mobile */
 

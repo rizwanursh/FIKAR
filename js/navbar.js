@@ -108,3 +108,25 @@ window.addEventListener("scroll", updateActiveNav);
 // ========================================
 
 window.addEventListener("load", updateActiveNav);
+
+
+const dropdown = document.querySelector(".dropdown");
+const dropdownToggle = document.querySelector(".dropdown-toggle");
+
+dropdownToggle.addEventListener("click", function () {
+    const isOpen = dropdown.classList.toggle("open");
+    dropdownToggle.setAttribute("aria-expanded", isOpen);
+});
+
+
+document.addEventListener("click", function (event) {
+    const dropdown = document.querySelector(".dropdown");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+
+    if (!dropdown || !dropdownMenu) return;
+
+    if (!dropdown.contains(event.target)) {
+        dropdown.classList.remove("active");
+        dropdownMenu.classList.remove("show");
+    }
+});

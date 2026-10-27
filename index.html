@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/competition.css">
+    <link rel="stylesheet" href="css/talkshow.css">
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/merch.css">
     <link rel="stylesheet" href="css/gallery.css">
@@ -52,29 +53,32 @@
             </a>
 
             <nav class="navbar" id="navbar">
-    
                 <ul>
-    
-                    <li><a href="#home" >Home</a></li>
-    
-                    <li><a href="#tentang">Tentang</a></li>
-    
-                    <li><a href="#lomba">Lomba</a></li>
+                    <li><a href="#home">Home</a></li>
 
-                    <!-- <li><a href="#Talkshow">Talkshow</a></li> -->
-    
+                    <li><a href="#tentang">Tentang</a></li>
+
+                    <li class="dropdown">
+                        <button type="button" class="dropdown-toggle" aria-expanded="false">
+                            Kegiatan <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#lomba">Lomba</a></li>
+                            <li><a href="#Talkshow">Talkshow</a></li>
+                        </ul>
+                    </li>
+
                     <li><a href="#timeline">Timeline</a></li>
-    
+
                     <!-- <li><a href="#merch">Merch</a></li> -->
-    
+
                     <li><a href="#galeri">Galeri</a></li>
-    
+
                     <li><a href="#faq">FAQ</a></li>
-    
+
                     <li><a href="#kontak">Kontak</a></li>
-    
                 </ul>
-    
             </nav>
     
             <div class="hamburger" id="hamburger">
@@ -611,6 +615,92 @@
     </div>
 
 
+    <section id="Talkshow" class="talkshow">
+
+        <div class="container">
+            <div class="about-container">
+                <!-- Kiri -->
+                <div class="about-content" data-aos="fade-right">
+        
+                    <p class="section-subtitle">
+                        FIKAR XIV
+                    </p>
+        
+                    <h2 class="section-title">
+                        Talkshow
+                    </h2>
+        
+                    <p class="section-description">
+                        Talkshow FIKAR XIV mengangkat tema “Self Awareness: 
+                        Capek Ngejar Sempurna, Gimana Kalau Cukup Aja?” untuk 
+                        mengajak generasi muda mengenali dan menerima diri di 
+                        tengah tuntutan kesempurnaan. Melalui perspektif Islam, 
+                        talkshow ini mengajak kita memahami makna qana’ah, 
+                        mensyukuri apa yang dimiliki, serta menyeimbangkan usaha 
+                        duniawi dengan kehidupan akhirat.
+        
+                    <!-- informasi talkshow -->
+                    <div class="talkshow-info">
+        
+                        <div class="talkshow-info-item">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <div>
+                                <h3>Waktu Pelaksanaan</h3>
+                                <p>15 November 2026</p>
+                            </div>
+                        </div>
+        
+                        <div class="talkshow-info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>Tempat Pelaksanaan</h3>
+                                <p>Gd. Achmad Sanusi Universitas Pendidikan Indonesia</p>
+                            </div>
+                        </div>
+        
+                        <div class="talkshow-info-item">
+                            <i class="fa-solid fa-microphone"></i>
+                            <div>
+                                <h3>Pemateri</h3>
+                                <p>Alfatahar</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+
+                <!-- Kanan -->
+                <div class="about-image" data-aos="fade-left">
+                    <img src="assets/images/poster-talkshow.png"
+                        alt="Poster Talkshow FIKAR XIV"
+                        class="talkshow-poster"
+                        id="talkshowPoster"
+                        style="border-radius: 10px;">
+                </div>
+
+                <div class="poster-lightbox" id="posterLightbox">
+                    <button class="poster-close" id="posterClose"
+                        aria-laber="Tutup poster">&times;</button>
+                    
+                    <img src="assets/images/poster-talkshow.png"
+                         alt="Poster Talkshow FIKAR XIV diperbasar"
+                         id="posterLightboxImage">
+                         
+                </div>
+            </div>
+            <!-- Tombol pendaftaran -->
+            <div class="talkshow-action" data-aos="fade-right">
+                <a href="https://bit.ly/TalkshowFIKARXIV"
+                    class="btn talkshow-btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        Daftar Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- ===========================
             TIMELINE
@@ -787,7 +877,7 @@
         <h2 class="section-title">Merchandise FIKAR XIV</h2>
 
         <p class="section-description">
-            Miliki merchandise resmi Festival Kampung Arab XIV.
+            Miliki merchandise resmi untuk seluruh peserta FIKAR XIV.
         </p>
 
         <div class="swiper merchSwiper">
@@ -1281,7 +1371,7 @@
     
                 <a href="#lomba">Lomba</a>
 
-                <!-- <a href="#Talkshow">Talkshow</a> -->
+                <a href="#Talkshow">Talkshow</a>
     
                 <a href="#timeline">Timeline</a>
 
@@ -1339,6 +1429,7 @@
     <script src="js/animation.js"></script>
     <script src="js/main.js"></script>
     <script src="js/lomba-popup.js"></script>
+    <script src="js/talkshow.js"></script>
 
     <script>
         if ('scrollRestoration' in history) {
